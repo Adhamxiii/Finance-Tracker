@@ -21,6 +21,6 @@ mongoose_1.default
     .then(() => console.log("CONNECTED TO MONGODB!"))
     .catch((err) => console.error("Failed to Connect to MongoDB:", err));
 app.use("/financial-records", FinancialRecordsRouter_1.default);
-app.listen(port, () => {
+app.listen(Number(port), "0.0.0.0", () => {
     console.log(`Server Running on Port ${port}`);
 });

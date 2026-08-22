@@ -23,6 +23,6 @@ mongoose
 
 app.use("/financial-records", financialRecordRouter);
 
-app.listen(port, () => {
+app.listen(Number(port), "0.0.0.0", () => {
     console.log(`Server Running on Port ${port}`);
 });
